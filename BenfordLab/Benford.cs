@@ -53,7 +53,7 @@ namespace BenfordLab
                     Digit = array.Key,
                     Count = array.Count()
                 })
-                .OrderBy(o => o.Digit);
+                .OrderByDescending(o => o.Digit);
 
             return m.ToArray();
         }
